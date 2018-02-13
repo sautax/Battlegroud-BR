@@ -57,6 +57,6 @@
   },
   "files" : [
     "index.ts",
-    "test.ts"
+    "utils.ts"
   ]
 }
