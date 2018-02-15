@@ -56,9 +56,10 @@
     // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
   },
   "files": [
-    "./src/client/",
-    "./src/server/",
-    "./src/engine/"
+    "./src/client/index.ts",
+    "./src/client/utils.ts",
+    "./src/server/index.ts",
+    "./src/engine/index.ts"
     
   ]
 }
