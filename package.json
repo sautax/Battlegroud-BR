@@ -1,0 +1,15 @@
+{
+
+"name": "battlegroud_br",
+
+"version": "0.0.2",
+"description": "A 2D battle royale",
+"author": {
+    "name" : "sautax"
+},
+"dependencies": {
+    "ejs" : "~2.5.7", 
+    "express" : "~4.16.2"
+}
+}
+

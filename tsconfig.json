@@ -58,7 +58,6 @@
   "files": [
     "./src/client/index.ts",
     "./src/client/utils.ts",
-    "./src/server/index.ts",
     "./src/engine/index.ts"
     
   ]
