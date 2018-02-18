@@ -27,6 +27,10 @@
             background: white;
         }
     </style>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io.connect('http://localhost:8080');
+    </script>
     <script src="./bin/engine/index.js"></script>
     <script src="./bin/client/utils.js"></script>
     <script src="./bin/client/index.js"></script>
