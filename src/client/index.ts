@@ -95,8 +95,7 @@ window.onload = function(){
             context.fillStyle = players[i].color
             context.fillRect(players[i].x*scl,players[i].y*scl,canvas.width/8,canvas.width/8)
         }
-        context.strokeStyle = 'red'
-        
+        context.strokeStyle = "red"
         context.beginPath()
         context.moveTo(0,0)
         context.lineTo(m.width*scl,0)
