@@ -1,1 +1,0 @@
-the server is directly coded in js for compatibility

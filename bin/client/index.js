@@ -4,6 +4,7 @@ document.addEventListener("mousemove", function (e) {
     mouseX = e.clientX;
     mouseY = e.clientY;
 });
+
 document.addEventListener("keydown", function (e) {
     if (e.key === "ArrowLeft") {
         left = 1;
@@ -17,6 +18,7 @@ document.addEventListener("keydown", function (e) {
     if (e.key === "ArrowDown") {
         down = 1;
     }
+
 });
 document.addEventListener("keyup", function (e) {
     if (e.key === "ArrowLeft") {
@@ -44,12 +46,14 @@ let right = 0;
 let left = 0;
 let up = 0;
 let down = 0;
-window.onload = function () {
+let pseudo = prompt('enter a pseudo');
+socket.emit('newP', pseudo);
+socket.on("Pupdate", function (cp) {
     let canvas = document.querySelector("#canvas");
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     let context = canvas.getContext('2d');
-    let clientPlayer = new player([0, 0], "#bd809a");
+    let clientPlayer = cp
     mouseX = canvas.width / 2;
     mouseY = canvas.height / 2;
     let vect = [0, 0];
@@ -63,6 +67,7 @@ window.onload = function () {
         y = Math.floor(Math.random() * 4900);
         players.push(new player([x, y], "red"));
     }
+
     function draw() {
         // vect[0] = mouseX - canvas.width/2
         // vect[1] = mouseY - canvas.height/2
@@ -112,4 +117,6 @@ window.onload = function () {
         requestAnimFrame(draw);
     }
     draw();
-};
+
+
+})
