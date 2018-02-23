@@ -87,12 +87,12 @@ socket.on("Pupdate", function (cp, mp) {
         context.fillRect(0, 0, canvas.width, canvas.height);
         context.save();
         //context.translate(-clientPlayer.x + canvas.width/16,-clientPlayer.y+canvas.width/16)
-        context.translate(canvas.width / 2, canvas.height / 2);
+        //context.translate(canvas.width / 2, canvas.height / 2);
         context.strokeStyle = "white";
-        context.fillStyle = clientPlayer.color;
-        context.fillRect(-canvas.width / 16, -canvas.width / 16, canvas.width / 8, canvas.width / 8);
+        //context.fillStyle = clientPlayer.color;
+        //context.fillRect(-canvas.width / 16, -canvas.width / 16, canvas.width / 8, canvas.width / 8);
         context.translate(-(clientPlayer.x + canvas.width / 16), -(clientPlayer.y + canvas.width / 16));
-        console.log(players)
+        //console.log(players)
         for (let i = 0; i < players.length; i++) {
             context.fillStyle = players[i].color;
             context.fillRect(players[i].x * scl, players[i].y * scl, canvas.width / 8, canvas.width / 8);
